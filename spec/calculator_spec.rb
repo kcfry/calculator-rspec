@@ -20,5 +20,17 @@ describe Calculator do
 	
 	end
 
-
+	describe 'subtraction' do
+		it 'returns an integer' do
+			calc = Calculator.new
+			actual = calc.sub(2,3) 
+			expect(actual).to be_a Integer
+		end
+	
+		it 'can subtract many numbers' do
+			calc = Calculator.new
+			actual = calc.sub(3,2,1)
+			expect(actual). to eq 0
+		end	
+	end		
 end
