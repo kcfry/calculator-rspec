@@ -47,6 +47,8 @@ describe Calculator do
 			calc = Calculator.new
 			actual = calc.sub(3,5)
 			expect(actual).to eq -2
+			actual = calc.sub(5,3)
+			expect(actual). to eq 2
 		end
 		
 	end		
@@ -103,3 +105,9 @@ describe Calculator do
 		end	
 	end	
 end	
+
+
+
+
+
+
